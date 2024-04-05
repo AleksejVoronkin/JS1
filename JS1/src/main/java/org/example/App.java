@@ -10,9 +10,9 @@ public class App {
         Gson gson = new Gson();
 
         String json = gson.toJson(person);
-        System.out.println("Сериализованный объект в JSON: " + json);
+        System.out.println("\nСериализованный объект в JSON: " + json);
 
         Person deserializedPerson = gson.fromJson(json, Person.class);
-        System.out.println("Десериализованный JSON в объект: " + deserializedPerson);
+        System.out.println("\nДесериализованный JSON в объект: " + deserializedPerson);
     }
 }
